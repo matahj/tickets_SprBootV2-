@@ -1,4 +1,4 @@
-package com.bedu.tickets_sprbootv2.models;
+package com.bedu.tickets_sprbootv2.models.builders;
 
 import lombok.Data;
 

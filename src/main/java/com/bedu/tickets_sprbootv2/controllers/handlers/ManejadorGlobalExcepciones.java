@@ -1,6 +1,6 @@
 package com.bedu.tickets_sprbootv2.controllers.handlers;
 
-import com.bedu.tickets_sprbootv2.models.RespuestaError;
+import com.bedu.tickets_sprbootv2.models.builders.RespuestaError;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -18,4 +18,6 @@ public class ManejadorGlobalExcepciones {
                 .ruta(request.getDescription(false).substring(4))
                 .entidad();
     }
+
+
 }
