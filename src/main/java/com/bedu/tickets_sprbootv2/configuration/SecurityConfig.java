@@ -29,7 +29,7 @@ public class SecurityConfig {
                 .hasRole("ADMIN")
                 .requestMatchers(HttpMethod.PUT)
                 .hasRole("ADMIN")
-                .requestMatchers(HttpMethod.PATCH)
+                .requestMatchers(HttpMethod.POST)
                 .hasRole("ADMIN")
                 .requestMatchers("/admins")
                 .hasRole("ADMIN")
