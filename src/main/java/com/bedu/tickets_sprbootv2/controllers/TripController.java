@@ -22,6 +22,7 @@ public class TripController {
         return ResponseEntity.created(URI.create("1")).build();
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/trips")
     public Iterable<Trip> obtenerTrip(){
         return repository.findAll();
