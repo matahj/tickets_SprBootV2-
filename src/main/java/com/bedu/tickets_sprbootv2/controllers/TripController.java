@@ -22,7 +22,7 @@ public class TripController {
         return ResponseEntity.created(URI.create("1")).build();
     }
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = {"http://localhost:4200","https://resilient-kitten-27a2e6.netlify.app"})
     @GetMapping("/trips")
     public Iterable<Trip> obtenerTrip(){
         return repository.findAll();
