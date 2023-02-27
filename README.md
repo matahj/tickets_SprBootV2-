@@ -5,7 +5,7 @@ Se desarrolla una aplicación para la venta de boletos de Autobús, el backend c
 
 Frontend:
 
-[Front](https://ticketssprbootv2-production.up.railway.app/)
+[https://resilient-kitten-27a2e6.netlify.app](https://resilient-kitten-27a2e6.netlify.app)
 
 Backend:
 
@@ -21,6 +21,8 @@ Se tiene un respositorio y un tablero Kanban en github, cada vez que se cumple c
 
 Respositorio del frontend:
 
+[https://github.com/matahj/ticketsFront](https://github.com/matahj/ticketsFront)
+
 Respositorio del backend:
 
 [https://github.com/matahj/tickets_SprBootV2-](https://github.com/matahj/tickets_SprBootV2-)
@@ -31,7 +33,7 @@ Tablero:
 
 
 ### Especificaciones
-Se tienen terminales en diferentes estados de la República, las cuales son origen y destino de los viajes. Cada terminal tiene adscritos un conjunto de autobuses y uno de conductores, los cuales son asignados a cada viaje según su disponibilidad y de manera independiente unos de otros. Los viajes son programados con origen, destino, fecha y hora de salida. El precio del boleto se establece al programar el viaje (dependiendo de diferentes factores). Todos los autobuses tienen cuarenta asientos y se clasifican en las clases primera, segunda y tercera; otras características importantes que se deben tomar en cuenta son la matrícula del autobús y su estado mecánico (operativo o en mantenimiento). Los clientes deben registrarse con: nombre completo, domicilio, correo electrónico y telefono. Cuando el cliente compra un vije selecciona un asiento. Para cada viaje de ida, hay uno de regreso con el mismo autobús y el mismo conductor. El usuario "administrador" tiene acceso y puede modificar todas las tablas (operaciones CRUD), los usuario "cliente" pueden leer "viajes", crear-leer-actualizar su propia información en "clientes" y crear-leer "boletos" (no puede hacer cancelaciones ni cambios).
+Se tienen terminales en diferentes estados de la República, las cuales son origen y destino de los viajes. Cada terminal tiene adscritos un conjunto de autobuses y uno de conductores, los cuales son asignados a cada viaje según su disponibilidad y de manera independiente unos de otros. Los viajes son programados con origen, destino, fecha y hora de salida. El precio del boleto se establece al programar el viaje (dependiendo de diferentes factores). Todos los autobuses tienen cuarenta asientos y se clasifican en las clases primera, segunda y tercera; otras características importantes que se deben tomar en cuenta son la matrícula del autobús y su estado mecánico (operativo o en mantenimiento). Los clientes deben registrarse con: nombre completo, domicilio, correo electrónico y telefono. Cuando el cliente compra un vije selecciona un asiento. El usuario "administrador" tiene acceso y puede modificar todas las tablas (operaciones CRUD), los usuario "cliente" pueden leer "viajes", crear-leer-actualizar su propia información en "clientes" y crear-leer sus propios boletos en "boletos" (no puede hacer cancelaciones ni cambios).
 
 ![tripsSpringBootDBdeer.png](./imgs/ticketsDBv2_diagrama.png)
 
@@ -112,4 +114,6 @@ http://localhost:8080/users
 http://localhost:8080/users/{id}
 ~~~
 
+### Despliegue
 
+El backend se despliega en Railway y el frontend en Netlify, esto, automáticamente al hacer push a la rama main.
