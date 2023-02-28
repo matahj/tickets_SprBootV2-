@@ -10,7 +10,6 @@ import java.net.URI;
 
 @RestController
 public class StationContoller {
-
     private StationRepository repository;
 
     public StationContoller(StationRepository repository) {

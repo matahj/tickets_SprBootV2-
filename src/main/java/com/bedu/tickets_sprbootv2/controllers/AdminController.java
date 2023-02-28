@@ -1,9 +1,7 @@
 package com.bedu.tickets_sprbootv2.controllers;
 
 import com.bedu.tickets_sprbootv2.models.Admin;
-import com.bedu.tickets_sprbootv2.models.User;
 import com.bedu.tickets_sprbootv2.repository.AdminRepository;
-import com.bedu.tickets_sprbootv2.repository.UserRepository;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
