@@ -18,12 +18,14 @@ public class UserController {
         this.repository = repository;
     }
 
+    @CrossOrigin(origins = {"http://localhost:4200","https://resilient-kitten-27a2e6.netlify.app"})
     @PostMapping("/users")
     public ResponseEntity<Void> crearUsuario(@Valid @RequestBody User user){
         repository.save(user);
         return ResponseEntity.created(URI.create("1")).build();
     }
 
+    @CrossOrigin(origins = {"http://localhost:4200","https://resilient-kitten-27a2e6.netlify.app"})
     @GetMapping("/users")
     public Iterable<User> obtenerUsuarios(){
         return repository.findAll();

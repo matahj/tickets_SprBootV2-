@@ -6,10 +6,7 @@ import com.bedu.tickets_sprbootv2.repository.BusRepository;
 import com.bedu.tickets_sprbootv2.repository.TicketRepository;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 
@@ -21,12 +18,14 @@ public class TicketController {
         this.repository = repository;
     }
 
+    @CrossOrigin(origins = {"http://localhost:4200","https://resilient-kitten-27a2e6.netlify.app"})
     @PostMapping("/tickets")
     public ResponseEntity<Void> crearTicket(@Valid @RequestBody Ticket ticket){
         repository.save(ticket);
         return ResponseEntity.created(URI.create("1")).build();
     }
 
+    @CrossOrigin(origins = {"http://localhost:4200","https://resilient-kitten-27a2e6.netlify.app"})
     @GetMapping("/tickets")
     public Iterable<Ticket> obtenerTickets(){
         return repository.findAll();

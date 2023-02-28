@@ -16,6 +16,7 @@ public class TripController {
         this.repository = repository;
     }
 
+    @CrossOrigin(origins = {"http://localhost:4200","https://resilient-kitten-27a2e6.netlify.app"})
     @PostMapping("/trips")
     public ResponseEntity<Void> crearTrip(@Valid @RequestBody Trip trip){
         repository.save(trip);
