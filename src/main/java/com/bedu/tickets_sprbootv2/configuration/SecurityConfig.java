@@ -24,7 +24,7 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
         http.csrf()
                 .disable()
-                .authorizeHttpRequests()
+                /*.authorizeHttpRequests()
                 .requestMatchers(HttpMethod.DELETE)
                 .hasRole("ADMIN")
                 .requestMatchers(HttpMethod.PUT)
@@ -47,7 +47,7 @@ public class SecurityConfig {
                 .permitAll()
                 .anyRequest()
                 .authenticated()
-                .and()
+                .and()*/
                 .httpBasic()
                 .and()
                 .sessionManagement()
